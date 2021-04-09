@@ -128,8 +128,8 @@ class _ServerMock {
         return {
             ...this._getSecurityData(id),
 
-            open_price: this._openPriceLookup[id],
-            prev_close_price: this._prevClosePriceLookup[id],
+            open_price: this._formatPrice(this._openPriceLookup[id]),
+            prev_close_price: this._formatPrice(this._prevClosePriceLookup[id]),
 
             current_price: this._formatPrice(currentPrice),
             current_price_change: this._formatFloat(currentPriceChange),
