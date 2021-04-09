@@ -116,12 +116,18 @@ class _ServerMock {
     _getLastPrice = id => this._prevPriceGivenCache[id] || null;
 
     _buildCurrentPriceData = (id) => {
+        if (!this._securitiesLookup[id])
+            return null;
+
         const currentPrice = this._calculateCurrentPrice(id);
         const {
             value: currentPriceChange,
             percent: currentPriceChangePercent
         } = this._calculateDayChangeAndPercent(id, currentPrice);
+
         return {
+            ...this._getSecurityData(id),
+
             open_price: this._openPriceLookup[id],
             prev_close_price: this._prevClosePriceLookup[id],
 

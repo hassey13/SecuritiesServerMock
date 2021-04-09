@@ -1,6 +1,6 @@
 {
   "name": "securitiesservermock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "I have created a class to provide you data like a server might.",
   "main": "ServerMock.js",
   "scripts": {
