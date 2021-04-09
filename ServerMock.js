@@ -131,11 +131,15 @@ class _ServerMock {
             open_price: this._openPriceLookup[id],
             prev_close_price: this._prevClosePriceLookup[id],
 
-            current_price: currentPrice,
-            current_price_change: currentPriceChange,
-            current_price_change_percent: currentPriceChangePercent,
+            current_price: this._formatPrice(currentPrice),
+            current_price_change: this._formatFloat(currentPriceChange),
+            current_price_change_percent: this._formatFloat(currentPriceChangePercent),
         }
     };
+
+    _formatPrice = f => parseFloat(f.toFixed(2));
+
+    _formatFloat = f => parseFloat(f.toFixed(4));
 
     _buildSecurityPortfolioData = id => {
         if (!this._securitiesLookup[id])
