@@ -1,0 +1,19 @@
+{
+  "name": "securitiesservermock",
+  "version": "1.0.0",
+  "description": "I have created a class to provide you data like a server might.",
+  "main": "ServerMock.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassey13/SecuritiesServerMock.git"
+  },
+  "author": "Eric Hasselbring",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hassey13/SecuritiesServerMock/issues"
+  },
+  "homepage": "https://github.com/hassey13/SecuritiesServerMock#readme"
+}
