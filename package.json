@@ -1,6 +1,6 @@
 {
   "name": "securitiesservermock",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "I have created a class to provide you data like a server might.",
   "main": "ServerMock.js",
   "scripts": {
@@ -15,20 +15,5 @@
   "bugs": {
     "url": "https://github.com/hassey13/SecuritiesServerMock/issues"
   },
-  "homepage": "https://github.com/hassey13/SecuritiesServerMock#readme",
-  "babel": {
-    "presets": [
-      "react-app",
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-syntax-class-properties"
-      ],
-      [
-        "@babel/plugin-proposal-class-properties"
-      ]
-    ]
-  }
+  "homepage": "https://github.com/hassey13/SecuritiesServerMock#readme"
 }
