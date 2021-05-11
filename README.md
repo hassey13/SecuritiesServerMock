@@ -27,7 +27,7 @@ I have created a class to provide you data like a server might.
     ServerMock.getSecurityPrices // returns a Promise that resolves to a lookup security (stock) pricing data
 
         {
-            1: { id: 1, name: 'Apple Inc.', symbol: 'AAPL', current_price: 122.42, current_price_change: 1.12, current_price_change_percent: .0087, },
+            1: { id: 1, name: 'Apple Inc.', symbol: 'AAPL', current_price: 122.42, current_price_change: 1.12, current_price_change_percent: .0087, prev_close_price: <float>, open_price: : <float> },
             ...
         }
 
